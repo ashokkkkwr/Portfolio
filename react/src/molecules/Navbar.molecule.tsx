@@ -1,38 +1,126 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function NavbarMolecule() {
+  const [activeSection, setActiveSection] = useState<string>("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSection: string | null = "home";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 60) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      // Ensure currentSection is not null before setting state
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <header className="flex justify-between bg-red-500 p-6">
-        <div className="flex">
-          <a href="/" className="logo">
-            <i className="fab fa-node-js"></i> Ashok
+      <header className="flex justify-between items-center bg-white shadow-md p-4">
+        <div className="flex items-center">
+          <a href="/" className="text-2xl font-bold text-gray-800">
+            <i className="fab fa-node-js"></i> Ashok Katwal
           </a>
         </div>
-        <nav className=" ">
-          <ul className="   flex justify-between bg-red-400 px-20">
+        <nav>
+          <ul className="flex space-x-8 text-lg">
             <li>
-              <a className="active" href="#home">
+              <a
+                className={`${
+                  activeSection === "home"
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                } transition duration-300`}
+                href="#home"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a
+                className={`${
+                  activeSection === "about"
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                } transition duration-300`}
+                href="#about"
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a
+                className={`${
+                  activeSection === "skills"
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                } transition duration-300`}
+                href="#skills"
+              >
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#education">Education</a>
+              <a
+                className={`${
+                  activeSection === "education"
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                } transition duration-300`}
+                href="#education"
+              >
+                Education
+              </a>
             </li>
             <li>
-              <a href="#work">Work</a>
+              <a
+                className={`${
+                  activeSection === "work"
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                } transition duration-300`}
+                href="#work"
+              >
+                Work
+              </a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a
+                className={`${
+                  activeSection === "experience"
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                } transition duration-300`}
+                href="#experience"
+              >
+                Experience
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a
+                className={`${
+                  activeSection === "contact"
+                    ? "text-blue-500"
+                    : "hover:text-blue-500"
+                } transition duration-300`}
+                href="#contact"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
