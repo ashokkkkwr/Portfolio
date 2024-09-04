@@ -5,7 +5,7 @@ import AboutCard from '../molecules/AboutCard.molecules';
 
 export default function AboutOrganism() {
   return (
-<div id="about" style={{ minHeight: "100vh" }}>
+<div id="about" >
       
       <div  className="">
       <Particle />
