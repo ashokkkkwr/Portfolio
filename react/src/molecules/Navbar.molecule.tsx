@@ -15,7 +15,6 @@ export default function NavbarMolecule() {
         }
       });
 
-      // Ensure currentSection is not null before setting state
       if (currentSection) {
         setActiveSection(currentSection);
       }
@@ -28,9 +27,18 @@ export default function NavbarMolecule() {
     };
   }, []);
 
+  const handleClick = (sectionId: string) => {
+    setActiveSection(sectionId);
+    
+    // Delay the scroll slightly to ensure the state updates first
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  };
+
   return (
     <div>
-      <header className="flex justify-between items-center bg-white shadow-md p-4">
+      <header className="flex justify-between items-center bg-white shadow-md p-4 sticky top-0 z-50">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-gray-800">
             <i className="fab fa-node-js"></i> Ashok Katwal
@@ -46,6 +54,7 @@ export default function NavbarMolecule() {
                     : "hover:text-blue-500"
                 } transition duration-300`}
                 href="#home"
+                onClick={() => handleClick("home")}
               >
                 Home
               </a>
@@ -58,6 +67,7 @@ export default function NavbarMolecule() {
                     : "hover:text-blue-500"
                 } transition duration-300`}
                 href="#about"
+                onClick={() => handleClick("about")}
               >
                 About
               </a>
@@ -70,6 +80,7 @@ export default function NavbarMolecule() {
                     : "hover:text-blue-500"
                 } transition duration-300`}
                 href="#skills"
+                onClick={() => handleClick("skills")}
               >
                 Skills
               </a>
@@ -82,6 +93,7 @@ export default function NavbarMolecule() {
                     : "hover:text-blue-500"
                 } transition duration-300`}
                 href="#education"
+                onClick={() => handleClick("education")}
               >
                 Education
               </a>
@@ -94,6 +106,7 @@ export default function NavbarMolecule() {
                     : "hover:text-blue-500"
                 } transition duration-300`}
                 href="#work"
+                onClick={() => handleClick("work")}
               >
                 Work
               </a>
@@ -106,6 +119,7 @@ export default function NavbarMolecule() {
                     : "hover:text-blue-500"
                 } transition duration-300`}
                 href="#experience"
+                onClick={() => handleClick("experience")}
               >
                 Experience
               </a>
@@ -118,6 +132,7 @@ export default function NavbarMolecule() {
                     : "hover:text-blue-500"
                 } transition duration-300`}
                 href="#contact"
+                onClick={() => handleClick("contact")}
               >
                 Contact
               </a>

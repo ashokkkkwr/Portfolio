@@ -3,7 +3,7 @@ import React from 'react';
 export default function EducationOrganism() {
   return (
     <div>
-      <section className="education" id="education">
+      <div className="education" id="education">
         <h1 className="heading"><i className="fas fa-graduation-cap"></i> My <span>Education</span></h1>
         <p className="quote">Education is not the learning of facts, but the training of the mind to think.</p>
         <div className="box-container">
@@ -28,7 +28,7 @@ export default function EducationOrganism() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
