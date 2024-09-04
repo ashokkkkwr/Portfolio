@@ -6,9 +6,9 @@ import { GiAbstract042 } from "react-icons/gi";
 
 function AboutCard() {
   return (
-    <div className="quote-div-view">
+    <div className="bg-red-100">
       <div>
-        <blockquote className="blockquote mb-0">
+        <blockquote className="">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Ashok Katwal </span>
             from <span className="purple"> Itahari, Nepal.</span>

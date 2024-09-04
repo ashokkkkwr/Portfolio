@@ -38,14 +38,14 @@ export default function NavbarMolecule() {
 
   return (
     <div>
-      <header className="flex justify-between items-center bg-white shadow-md p-4 sticky top-0 z-50">
+      <header className="flex justify-between items-center bg-white shadow-md p-7 sticky top-0 z-50">
         <div className="flex items-center">
-          <a href="/" className="text-2xl font-bold text-gray-800">
-            <i className="fab fa-node-js"></i> Ashok Katwal
+          <a href="/" className="text-2xl font-bold text-gray-800 ml-20">
+            <i className="fab fa-node-js"></i> Ashok <span className="text-blue-600">Katwal</span>
           </a>
         </div>
         <nav>
-          <ul className="flex space-x-8 text-lg">
+          <ul className="flex space-x-8 text-lg mr-20">
             <li>
               <a
                 className={`${
