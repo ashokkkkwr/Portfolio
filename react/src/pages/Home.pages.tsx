@@ -2,7 +2,8 @@ import React from 'react'
 import NavbarMolecule from '../molecules/Navbar.molecule'
 import HeroOrganism from '../organism/Hero.organism'
 import AboutOrganism from '../organism/About.organism'
-import SkillsOrganism from '../organism/Skills.organism'
+import EducationOrganism from '../organism/Education.organism'
+
 
 export default function HomePages() {
   return (
@@ -11,7 +12,8 @@ export default function HomePages() {
         <NavbarMolecule />
         <HeroOrganism />
         <AboutOrganism />
-        <SkillsOrganism />
+        <EducationOrganism />
+
         
     </div>
   
