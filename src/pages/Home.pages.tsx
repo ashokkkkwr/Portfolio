@@ -14,11 +14,14 @@ export default function HomePages() {
   return (
     <>
     <div>
-      <div className='sticky top-0 z-10'>
+      <div className='sticky top-0 z-10 '>
       <NavbarMolecule />
       </div>
         
+        <div className='bg-black '>
         <HeroOrganism />
+        </div>
+      
         <AboutOrganism />
         <SkillOrganism />
         <EducationOrganism />
