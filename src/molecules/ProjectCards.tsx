@@ -27,13 +27,13 @@ function ProjectCards(props: {
   demoLink: string | undefined;
 }) {
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105">
+    <div className="">
       <img
-        className="w-full h-48 object-cover"
+        className="w-52 h-52"
         src={props.imgPath}
         alt="project"
       />
-      <div className="p-6">
+      <div className="">
         <h2 className="text-xl font-semibold text-white mb-4">{props.title}</h2>
         <p className="text-gray-300 text-justify">{props.description}</p>
         <div className="mt-6">
@@ -41,7 +41,7 @@ function ProjectCards(props: {
             href={props.ghLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition-colors duration-300"
+            className=""
           >
             <BsGithub className="inline-block mr-2" />{" "}
             {props.isBlog ? "Blog" : "GitHub"}
@@ -51,9 +51,9 @@ function ProjectCards(props: {
               href={props.demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition-colors duration-300 ml-4"
+              className=""
             >
-              <CgWebsite className="inline-block mr-2" /> Demo
+              <CgWebsite className="" /> Demo
             </a>
           )}
         </div>
