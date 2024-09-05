@@ -4,7 +4,7 @@ import Toolstack from '../molecules/Toolstack';
 import Github from '../molecules/Github';
 export default function SkillOrganism() {
   return (
-    <div id='skills'>
+    <div id='skills' className='flex flex-col justify-center items-center bg-red-500'>
           <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
