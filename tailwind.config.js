@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        // You can add more custom fonts here
+        
+          poppins: ['Poppins', 'sans-serif'],
+              // You can add more custom fonts here
         roboto: ['Roboto', 'sans-serif'],
         lato: ['Lato', 'sans-serif'],
         openSans: ['"Open Sans"', 'sans-serif'],

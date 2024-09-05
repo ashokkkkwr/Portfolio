@@ -4,7 +4,7 @@ import AboutCard from "../molecules/AboutCard.molecules";
 
 export default function AboutOrganism() {
   return (
-    <div id="about" className="bg-red-300">
+    <div id="about" className="">
       <div className="">
         <Particle />
         <div>
@@ -16,9 +16,11 @@ export default function AboutOrganism() {
                 paddingBottom: "50px",
               }}
             >
-              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              <div className="flex justify-center">
+              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }} className="mt-20">
                 Know Who <strong className="purple">I'M</strong>
               </h1>
+              </div>
               <AboutCard />
             </li>
             {/**

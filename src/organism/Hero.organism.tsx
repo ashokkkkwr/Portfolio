@@ -94,7 +94,7 @@ export default function HeroOrganism() {
       <div className=" mr-[17vh]">
         <img 
           draggable="false" 
-          className="w-[47vh]  h-auto rounded-3xl " 
+          className="w-[47vh]  h-auto rounded-3xl shadow-xl shadow-blue-300" 
           src={ashok}
           alt="Hero Image" 
         />
