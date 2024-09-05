@@ -11,21 +11,21 @@ import {
 
 function Toolstack() {
   return (
-    <ul style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <li className="tech-icons">
-        <FaGithub />
+    <ul className="flex flex-wrap justify-center bg- w-[82rem] gap-8 bg--100">
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <FaGithub className="text-7xl text-white" />
       </li>
-      <li className="tech-icons">
-        <SiVisualstudiocode />
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <SiVisualstudiocode  className="text-7xl text-white"/>
       </li>
-      <li  className="tech-icons">
-        <SiPostman />
+      <li  className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <SiPostman className="text-7xl text-white"/>
       </li>
-      <li  className="tech-icons">
-        <SiSlack />
+      <li  className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <SiSlack className="text-7xl text-white"/>
       </li>
-      <li className="tech-icons">
-        <FaLinux />
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <FaLinux className="text-7xl text-white"/>
       </li>
     </ul>
   );
