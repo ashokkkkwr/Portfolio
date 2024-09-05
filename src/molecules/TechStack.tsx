@@ -20,56 +20,47 @@ import {
   SiSolidity,
   SiPostgresql,
   SiMysql,
-  SiTailwindcss
+  SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
-
 function Techstack() {
   return (
-    <ul style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* <li xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </li> */}
-      <li className="tech-icons">
-        <DiJavascript1 />
+    <ul className="flex flex-wrap justify-center bg- w-[82rem] gap-8 bg--100">
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <DiJavascript1 className="text-7xl text-white" />
       </li>
-      {/* <li xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </li> */}
-      <li className="tech-icons">
-        <DiNodejs />
-      </li>
-      <li className="tech-icons">
-        <DiReact />
-      </li>
-      {/* <li xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </li> */}
-      <li  className="tech-icons">
-        <DiMongodb />
-      </li>
-      <li className="tech-icons">
-        <SiTailwindcss />
-      </li>
-      <li  className="tech-icons">
-        <DiGit />
-      </li>
-      <li  className="tech-icons">
-      <SiMysql />
-      </li>
-      <li className="tech-icons">
-      <FaHtml5 />
 
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <DiNodejs className="text-7xl  text-white" />
       </li>
-      <li  className="tech-icons">
-        <SiPostgresql />
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <DiReact className="text-7xl text-white" />
       </li>
-      <li  className="tech-icons">
-        <DiPython />
+
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <DiMongodb className="text-7xl text-white" />
       </li>
-      <li  className="tech-icons">
-        <DiJava />
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <SiTailwindcss className="text-7xl text-white" />
+      </li>
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <DiGit className="text-7xl text-white" />
+      </li>
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <SiMysql className="text-7xl text-white" />
+      </li>
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <FaHtml5 className="text-7xl text-white" />
+      </li>
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <SiPostgresql className="text-7xl text-white" />
+      </li>
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <DiPython className="text-7xl text-white" />
+      </li>
+      <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
+        <DiJava className="text-7xl text-white" />
       </li>
     </ul>
   );
