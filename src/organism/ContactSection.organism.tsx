@@ -1,6 +1,8 @@
 import React from "react";
 import contactImage from "../assets/contact1.png"
 import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt, FaUser } from "react-icons/fa";
+import { FaMessage } from "react-icons/fa6";
 const ContactSection = () => {
   return (
     <section
@@ -29,9 +31,11 @@ const ContactSection = () => {
                     name="name"
                     placeholder="Name"
                     required
-                    className="w-[96vh] pl-10 border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
+                    className="w-[40vh] pl-10 p-3 border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
                   />
-                  <MdEmail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"/>
+                  <FaUser className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"/>
+
+
 
                   
                 </div>
@@ -41,28 +45,30 @@ const ContactSection = () => {
                     name="email"
                     placeholder="email"
                     required
-                    className="w-full p-4  border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-10 p-3  border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
                   />
-                  <i className="fas fa-envelope absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-                </div>
+                  <MdEmail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"/>
+                  
+                  </div>
                 <div className="relative mb-4">
                 <input
                     type="text"
                     name="phone"
                     placeholder="phone"
                     required
-                    className="w-full p-4  border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-10 p-3  border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
                   />
-                  <i className="fas fa-phone-alt absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-                </div>
+                  <FaPhoneAlt className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"/>
+                  </div>
                 <div className="relative">
                   <textarea
                     placeholder="Message"
                     name="message"
                     required
-                    className="w-full p-4  border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-10 p-3  border border-gray-400 bg-blue-100 rounded-lg focus:outline-none focus:border-blue-500"
                   ></textarea>
-                  <i className="fas fa-comment-dots absolute left-4 top-4 text-gray-400"></i>
+                  
+                  <FaMessage className="absolute left-4 top-7 transform -translate-y-1/2 text-gray-400 text-xl"/>
                 </div>
               </div>
               <div className="flex items-end justify-end">
