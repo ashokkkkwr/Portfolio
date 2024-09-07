@@ -10,15 +10,13 @@ const ContactSection = () => {
         <i className="fas fa-headset"></i> Get in{" "}
         <span className="text-blue-500">Touch</span>
       </h2>
-      <div className="bg-red-100 w-[125vh] h-[50vh] ">
-        <div className="flex items-center justify-center ">
-          <div className="flex flex-col lg:flex-row items-center justify-center">
+      <div className="bg-white w-[125vh] h-[50vh] flex justify-center items-center">
             <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
               <img
                 src={contactImage}
                 alt="Contact"
                 draggable="false"
-                className="w-full"
+                className="w-[30vh]"
               />
             </div>
 
@@ -75,8 +73,6 @@ const ContactSection = () => {
               </div>
             </form>
           </div>
-        </div>
-      </div>
     </section>
   );
 };
