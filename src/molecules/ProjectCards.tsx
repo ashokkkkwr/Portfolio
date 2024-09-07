@@ -3,60 +3,39 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props: {
-  imgPath: string | undefined;
-  title:
-    | string
-    | number
-    | boolean
-    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-    | Iterable<React.ReactNode>
-    | React.ReactPortal
-    | null
-    | undefined;
-  description:
-    | string
-    | number
-    | boolean
-    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-    | Iterable<React.ReactNode>
-    | React.ReactPortal
-    | null
-    | undefined;
-  ghLink: string | undefined;
-  isBlog: any;
-  demoLink: string | undefined;
+  imgPath: string;
+  title: string;
+  description: string;
+  ghLink: string;
+  isBlog: boolean;
+  demoLink?: string;
 }) {
   return (
-    <div className="">
-      <img
-        className="w-52 h-52"
-        src={props.imgPath}
-        alt="project"
-      />
-      <div className="">
-        <h2 className="text-xl font-semibold text-white mb-4">{props.title}</h2>
-        <p className="text-gray-300 text-justify">{props.description}</p>
-        <div className="mt-6">
+    <div className="text-center">
+      <img className="w-full h-32 object-contain mb-4" src={props.imgPath} alt="project" />
+      <h2 className="text-2xl font-semibold text-white">{props.title}</h2>
+      <p className="text-gray-400 text-sm mt-2 mb-6">{props.description}</p>
+      
+      <div className="flex justify-center gap-4">
+        <a
+          href={props.ghLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-pink-500 text-white py-2 px-4 rounded-lg flex items-center space-x-2"
+        >
+          <BsGithub /> <span>GitHub</span>
+        </a>
+
+        {props.demoLink && (
           <a
-            href={props.ghLink}
+            href={props.demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className=""
+            className="bg-pink-500 text-white py-2 px-4 rounded-lg flex items-center space-x-2"
           >
-            <BsGithub className="inline-block mr-2" />{" "}
-            {props.isBlog ? "Blog" : "GitHub"}
+            <CgWebsite /> <span>Demo</span>
           </a>
-          {!props.isBlog && props.demoLink && (
-            <a
-              href={props.demoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=""
-            >
-              <CgWebsite className="" /> Demo
-            </a>
-          )}
-        </div>
+        )}
       </div>
     </div>
   );
