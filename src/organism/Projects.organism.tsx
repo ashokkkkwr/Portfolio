@@ -1,88 +1,112 @@
 import React from "react";
-import Particle from "../molecules/Particle";
-import ProjectCards from "../molecules/ProjectCards";
-import ashok from "../assets/react.svg";
+import Particle from "../molecules/Particle"; // Ensure this component is set up correctly
 
 export default function ProjectsOrganism() {
   return (
-    <div className="bg-blue-900 text-white">
-      <div className=" flex justify-center items-center">
-        <div className="bg-red-300">
-          <h1 className="text-6xl p font-serif text-white">
-            My Recent <span className="text-purple-500">Works</span>
-          </h1>
+    <div className="relative bg-[#0a002b] text-white min-h-screen">
+      {/* Particle Background */}
+      {/* <Particle /> */}
+
+
+      <div className="max-w-6xl mx-auto py-12">
+        <h2 className="text-4xl font-bold text-center text-white">
+          My Recent <span className="text-pink-400">Works</span>
+        </h2>
+        <p className="text-center text-gray-400 mb-8">
+          Here are a few projects I've worked on recently.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Card 1 */}
+          <div className="bg-gray-800 border-2 border-gray-700 rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://reactjs.org/logo-og.png"
+              alt="React logo"
+              className="h-16 mx-auto mb-4"
+            />
+            <h3 className="text-2xl font-semibold text-white">Chatify</h3>
+            <p className="text-gray-400 text-sm mb-4">
+              Personal Chat Room or Workspace to share resources and hangout with
+              friends. Built with React.js, Material-UI, and Firebase.
+            </p>
+            <div className="flex justify-center gap-4">
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                GitHub
+              </a>
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                Demo
+              </a>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-gray-800 border-2 border-gray-700 rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://reactjs.org/logo-og.png"
+              alt="React logo"
+              className="h-16 mx-auto mb-4"
+            />
+            <h3 className="text-2xl font-semibold text-white">Bits-of-Code</h3>
+            <p className="text-gray-400 text-sm mb-4">
+              My personal blog page built with Next.js and Tailwind CSS, rendering
+              markdown files using Next.js.
+            </p>
+            <div className="flex justify-center gap-4">
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                GitHub
+              </a>
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                Demo
+              </a>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-gray-800 border-2 border-gray-700 rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://reactjs.org/logo-og.png"
+              alt="React logo"
+              className="h-16 mx-auto mb-4"
+            />
+            <h3 className="text-2xl font-semibold text-white">Editor.io</h3>
+            <p className="text-gray-400 text-sm mb-4">
+              Online code and markdown editor built with React.js. Supports HTML,
+              CSS, and JS code preview.dp;s;ilfjdsalhsld;f afh dsa;lfh asdflhasd fah;f asfh;l nasf hjsal;nfahsbf;sahildf/sahfoblsa;fh;bsfhajsbfjlabsfp' ;swfsjpnksjgs; fjaqn joq; jd qqpdj
+            </p>
+            <div className="flex justify-center gap-4">
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                GitHub
+              </a>
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                Demo
+              </a>
+            </div>
+          </div>
+            {/* Card 4 */}
+            <div className="bg-gray-800 border-2 border-gray-700 rounded-lg shadow-md p-6 text-center">
+            <img
+              src="https://reactjs.org/logo-og.png"
+              alt="React logo"
+              className="h-16 mx-auto mb-4"
+            />
+            <h3 className="text-2xl font-semibold text-white">Editor.io</h3>
+            <p className="text-gray-400 text-sm mb-4">
+              Online code and markdown editor built with React.js. Supports HTML,
+              CSS, and JS code preview.dp;s;ilfjdsalhsld;f afh dsa;lfh asdflhasd fah;f asfh;l nasf hjsal;nfahsbf;sahildf/sahfoblsa;fh;bsfhajsbfjlabsfp' ;swfsjpnksjgs; fjaqn joq; jd qqpdj
+            </p>
+            <div className="flex justify-center gap-4">
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                GitHub
+              </a>
+              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+                Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <p className="text-center mb-12">
-        Here are a few projects I've worked on recently.
-      </p>
-      <div className="flex flex-wrap bg-red-500 justify-center gap-5 w-[150vh]">
-        <div className="w-96 h-[50vh] bg-black">
-          <ProjectCards
-            imgPath={ashok}
-            isBlog={false}
-            title="Chatify"
-            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-            ghLink="https://github.com/soumyajit4419/Chatify"
-            demoLink="https://chatify-49.web.app/"
-          />
-        </div>
 
-        <div className="w-96 h-[50vh] bg-black">
-          <ProjectCards
-            imgPath={ashok}
-            isBlog={false}
-            title="Bits-0f-C0de"
-            description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-            ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-            demoLink="https://blogs.soumya-jit.tech/"
-          />
-        </div>
-
-        <div className="w-96 h-[50vh] bg-black">
-          <ProjectCards
-            imgPath={ashok}
-            isBlog={false}
-            title="Editor.io"
-            description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-            ghLink="https://github.com/soumyajit4419/Editor.io"
-            demoLink="https://editor.soumya-jit.tech/"
-          />
-        </div>
-
-        <div className="w-96 h-[50vh] bg-black">
-          <ProjectCards
-            imgPath={ashok}
-            isBlog={false}
-            title="Plant AI"
-            description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-            ghLink="https://github.com/soumyajit4419/Plant_AI"
-            demoLink="https://plant49-ai.herokuapp.com/"
-          />
-        </div>
-
-        <div className="w-96 h-[50vh] bg-black">
-          <ProjectCards
-            imgPath={ashok}
-            isBlog={false}
-            title="Ai For Social Good"
-            description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace and thus helping in sucide prevention."
-            ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-            demoLink={undefined}
-          />
-        </div>
-        <div className="w-96 h-[50vh] bg-black">
-          <ProjectCards
-            imgPath={ashok}
-            isBlog={false}
-            title="Face Recognition and Emotion Detection"
-            description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%. Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-            ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-            demoLink={undefined}
-          />
-        </div>
-      </div>
-   
+      {/* Add more project cards here */}
     </div>
   );
 }
