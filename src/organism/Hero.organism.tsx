@@ -35,7 +35,7 @@ export default function HeroOrganism() {
               <a
                 className="text-blue-700 hover:text-blue-800 text-3xl"
                 aria-label="LinkedIn"
-                href="https://www.linkedin.com/in/jigar-sable/"
+                href="https://www.linkedin.com/in/ashok-katwal-2b6a402ba/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -46,7 +46,7 @@ export default function HeroOrganism() {
               <a
                 className="text-blue-400 hover:text-blue-500 text-3xl"
                 aria-label="GitHub"
-                href="https://github.com/jigar-sable"
+                href="https://github.com/ashokkkkwr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -57,7 +57,7 @@ export default function HeroOrganism() {
               <a
                 className="text-blue-400 hover:text-blue-500 text-3xl"
                 aria-label="Twitter"
-                href="https://twitter.com/jigar_sable"
+                href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -68,7 +68,7 @@ export default function HeroOrganism() {
               <a
                 className="text-blue-500 hover:text-blue-600 text-3xl"
                 aria-label="Telegram"
-                href="https://t.me/lifecode5"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -79,7 +79,7 @@ export default function HeroOrganism() {
               <a
                 className="text-pink-600 hover:text-pink-700 text-3xl"
                 aria-label="Instagram"
-                href="https://www.instagram.com/jigarsable.dev"
+                href="https://www.instagram.com/ashok_katwal.123/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
