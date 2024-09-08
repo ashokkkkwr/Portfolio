@@ -4,27 +4,29 @@ import { IoMdHeart } from 'react-icons/io';
 
 const Footer = () => {
   return (
-    <section className="bg-gray-100 text-gray-800 py-10">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between gap-8">
+    <footer className="bg-gray-900 text-gray-200 py-12">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
           {/* Portfolio Section */}
-          <div className="w-full md:w-1/3">
-            <h3 className="text-xl font-semibold mb-4">Jigar's Portfolio</h3>
-            <p className="text-base mb-4">
+          <div className="md:mb-0">
+            <h3 className="text-2xl font-bold mb-4 text-white">Jigar's Portfolio</h3>
+            <p className="text-base leading-relaxed mb-6">
               Thank you for visiting my personal portfolio website. Connect with me over socials.
               <br />
-              <br />
-              Keep Rising 🚀. Connect with me over live chat!
+              Keep Rising 🚀. Chat with me live!
             </p>
           </div>
 
           {/* Quick Links Section */}
-          <div className="w-full md:w-1/3">
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {['home', 'about', 'skills', 'education', 'work', 'experience'].map((link) => (
+          <div className="md:mb-0">
+            <h3 className="text-2xl font-bold mb-4 text-white">Quick Links</h3>
+            <ul className="space-y-3">
+              {['Home', 'About', 'Skills', 'Education', 'Work', 'Experience'].map((link) => (
                 <li key={link}>
-                  <a href={`#${link}`} className="flex items-center text-blue-600 hover:underline">
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    className="flex justify-center md:justify-start items-center text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                  >
                     <i className="fas fa-chevron-circle-right mr-2"></i> {link}
                   </a>
                 </li>
@@ -33,44 +35,81 @@ const Footer = () => {
           </div>
 
           {/* Contact Info Section */}
-          <div className="w-full md:w-1/3">
-            <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
-            <p className="flex items-center mb-2">
-              <FaPhone className="mr-2 text-blue-600" /> +91 XXX-XXX-XXXX
+          <div className="md:mb-0">
+            <h3 className="text-2xl font-bold mb-4 text-white">Contact Info</h3>
+            <p className="flex justify-center md:justify-start items-center mb-3">
+              <FaPhone className="mr-3 text-blue-400" /> +91 XXX-XXX-XXXX
             </p>
-            <p className="flex items-center mb-2">
-              <FaEnvelope className="mr-2 text-blue-600" /> jigarsable21@gmail.com
+            <p className="flex justify-center md:justify-start items-center mb-3">
+              <FaEnvelope className="mr-3 text-blue-400" /> jigarsable21@gmail.com
             </p>
-            <p className="flex items-center mb-4">
-              <FaMapMarkedAlt className="mr-2 text-blue-600" /> Pune, India-412206
+            <p className="flex justify-center md:justify-start items-center mb-6">
+              <FaMapMarkedAlt className="mr-3 text-blue-400" /> Pune, India-412206
             </p>
-            <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/jigar-sable" className="text-blue-600 hover:text-blue-800" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+
+            <div className="flex justify-center md:justify-start space-x-6">
+              <a
+                href="https://www.linkedin.com/in/jigar-sable"
+                className="text-blue-400 hover:text-blue-600 transition-colors duration-200"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://github.com/jigar-sable" className="text-gray-800 hover:text-gray-600" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/jigar-sable"
+                className="text-gray-400 hover:text-gray-600 transition-colors duration-200"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub size={24} />
               </a>
-              <a href="mailto:jigarsable21@gmail.com" className="text-red-600 hover:text-red-800" aria-label="Mail" target="_blank" rel="noopener noreferrer">
+              <a
+                href="mailto:jigarsable21@gmail.com"
+                className="text-red-500 hover:text-red-700 transition-colors duration-200"
+                aria-label="Mail"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaEnvelope size={24} />
               </a>
-              <a href="https://twitter.com/jigar_sable" className="text-blue-400 hover:text-blue-600" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/jigar_sable"
+                className="text-blue-400 hover:text-blue-600 transition-colors duration-200"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter size={24} />
               </a>
-              <a href="https://t.me/lifecode5" className="text-blue-600 hover:text-blue-800" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://t.me/lifecode5"
+                className="text-blue-400 hover:text-blue-600 transition-colors duration-200"
+                aria-label="Telegram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTelegramPlane size={24} />
               </a>
             </div>
           </div>
         </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-gray-500">
+            Designed with <IoMdHeart className="inline text-red-500 animate-pulse" /> by{' '}
+            <a
+              href="https://www.linkedin.com/in/jigar-sable"
+              className="text-blue-400 hover:underline"
+            >
+              Jigar Sable
+            </a>
+          </p>
+        </div>
       </div>
-      <h1 className="text-center text-gray-600 mt-10">
-        Designed with <IoMdHeart className="inline text-red-600 animate-pulse" /> by{' '}
-        <a href="https://www.linkedin.com/in/jigar-sable" className="text-blue-600 hover:underline">
-          jigar sable
-        </a>
-      </h1>
-    </section>
+    </footer>
   );
 };
 
