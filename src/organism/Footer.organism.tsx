@@ -1,6 +1,14 @@
-import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkedAlt, FaLinkedin, FaGithub, FaTwitter, FaTelegramPlane } from 'react-icons/fa';
-import { IoMdHeart } from 'react-icons/io';
+import React from "react";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkedAlt,
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaTelegramPlane,
+} from "react-icons/fa";
+import { IoMdHeart } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -9,11 +17,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
           {/* Portfolio Section */}
           <div className="md:mb-0">
-            <h3 className="text-2xl font-bold mb-4 text-white">Jigar's Portfolio</h3>
+            <h3 className="text-2xl font-bold mb-4 text-white">
+              Ashok's Portfolio
+            </h3>
             <p className="text-base leading-relaxed mb-6">
-              Thank you for visiting my personal portfolio website. Connect with me over socials.
+              Thank you for visiting my personal portfolio website. Connect with
+              me over socials.
               <br />
-              Keep Rising 🚀. Chat with me live!
+              Keep Rising 🚀 and don't stop grinding.
             </p>
           </div>
 
@@ -21,7 +32,14 @@ const Footer = () => {
           <div className="md:mb-0">
             <h3 className="text-2xl font-bold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-3">
-              {['Home', 'About', 'Skills', 'Education', 'Work', 'Experience'].map((link) => (
+              {[
+                "Home",
+                "About",
+                "Skills",
+                "Education",
+                "Work",
+                "Experience",
+              ].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
@@ -38,13 +56,15 @@ const Footer = () => {
           <div className="md:mb-0">
             <h3 className="text-2xl font-bold mb-4 text-white">Contact Info</h3>
             <p className="flex justify-center md:justify-start items-center mb-3">
-              <FaPhone className="mr-3 text-blue-400" /> +91 XXX-XXX-XXXX
+              <FaPhone className="mr-3 text-blue-400" /> +977 9818762132
             </p>
             <p className="flex justify-center md:justify-start items-center mb-3">
-              <FaEnvelope className="mr-3 text-blue-400" /> jigarsable21@gmail.com
+              <FaEnvelope className="mr-3 text-blue-400" />{" "}
+              ashokkatwal9811@gmail.com
             </p>
             <p className="flex justify-center md:justify-start items-center mb-6">
-              <FaMapMarkedAlt className="mr-3 text-blue-400" /> Pune, India-412206
+              <FaMapMarkedAlt className="mr-3 text-blue-400" /> Itahari-20 Tarahara,
+              Nepal-sunsari
             </p>
 
             <div className="flex justify-center md:justify-start space-x-6">
@@ -99,12 +119,13 @@ const Footer = () => {
 
         <div className="mt-12 text-center">
           <p className="text-gray-500">
-            Designed with <IoMdHeart className="inline text-red-500 animate-pulse" /> by{' '}
+            Designed with{" "}
+            <IoMdHeart className="inline text-red-500 animate-pulse" /> by{" "}
             <a
               href="https://www.linkedin.com/in/jigar-sable"
               className="text-blue-400 hover:underline"
             >
-              Jigar Sable
+              Ashok Katwal{" "}
             </a>
           </p>
         </div>
