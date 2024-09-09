@@ -7,25 +7,30 @@ export default function NavbarMolecule() {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       let currentSection: string | null = "home";
-
+  
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 60) {
+        const sectionHeight = section.offsetHeight;
+        const scrollY = window.scrollY;
+  
+        // Adjust the offset to account for the sticky navbar
+        if (scrollY >= sectionTop - 80 && scrollY < sectionTop + sectionHeight - 80) {
           currentSection = section.getAttribute("id");
         }
       });
-
+  
       if (currentSection) {
         setActiveSection(currentSection);
       }
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
 
   const handleClick = (sectionId: string) => {
     setActiveSection(sectionId);

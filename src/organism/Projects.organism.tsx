@@ -3,6 +3,7 @@ import Particle from "../molecules/Particle"; // Ensure this component is set up
 import watchProject from "../assets/project.png"
 import foodProject from "../assets/2024-04-15_20-45.png"
 import portfolioImage from "../assets/image.png"
+import postFlow from "../assets/image copy.png"
 export default function ProjectsOrganism() {
   return (
     <div className="bg-gray-200">
@@ -23,9 +24,9 @@ export default function ProjectsOrganism() {
           {/* Card 1 */}
           <div className="border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300 p-6 text-center">
             <img
-              src="https://reactjs.org/logo-og.png"
+              src={postFlow}
               alt="React logo"
-              className="h-16 mx-auto mb-4"
+              className="h-56  mb-4 object-contain"
             />
             <h3 className="text-2xl font-semibold text-white">Note Flow</h3>
             <p className="text-white text-sm mb-4">
@@ -43,7 +44,7 @@ export default function ProjectsOrganism() {
           </div>
 
           {/* Card 2 */}
-          <div className="border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300  p-6 text-center">
+          <div className="border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-110 transition duration-300  p-6 text-center">
           <h3 className="text-2xl font-semibold text-white">Ashok's Portfolio</h3>
 
             <img
