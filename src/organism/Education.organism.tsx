@@ -5,8 +5,7 @@ import IIC from "../assets/IIC.png"
 import DPS from "../assets/delhi-public-school-fulbaari-siliguri-schools-9ts62jzc1x.avif"
 export default function EducationOrganism() {
   return (
-    <div>
-      <div
+      <section
         className="flex flex-col justify-center items-center p-40 bg-gray-200"
         id="education"
       >
@@ -98,7 +97,6 @@ export default function EducationOrganism() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
   );
 }

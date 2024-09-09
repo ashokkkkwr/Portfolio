@@ -6,7 +6,7 @@ import portfolioImage from "../assets/image.png"
 import postFlow from "../assets/image copy.png"
 export default function ProjectsOrganism() {
   return (
-    <div className="bg-gray-200">
+    <section className="bg-gray-200" id="work">
     <div className="relative bg-blue-900 text-white min-h-screen rounded-3xl">
       {/* Particle Background */}
       {/* <Particle /> */}
@@ -113,6 +113,6 @@ export default function ProjectsOrganism() {
 
       {/* Add more project cards here */}
     </div>
-    </div>
+    </section>
   );
 }

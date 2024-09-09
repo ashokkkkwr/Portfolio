@@ -4,7 +4,10 @@ import AboutCard from "../molecules/AboutCard.molecules";
 
 export default function AboutOrganism() {
   return (
-    <div id="about" className="p-16">
+    <section
+    id="about"
+    className="p-16"
+  >
       <div className="">
         <Particle />
         <div>
@@ -33,6 +36,7 @@ export default function AboutOrganism() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
+
 }
