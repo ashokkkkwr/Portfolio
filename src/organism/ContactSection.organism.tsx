@@ -8,7 +8,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="py-16 bg-blue-50 flex flex-col items-center"
+      className="py-16 bg-blue-100 flex flex-col items-center"
     >
       <h2 className="text-3xl font-bold text-center mb-8">
         <i className="fas fa-headset"></i> Get in{" "}

@@ -1,9 +1,9 @@
 import React from "react";
 import Particle from "../molecules/Particle"; // Ensure this component is set up correctly
-
+import watchProject from "../assets/project.png"
 export default function ProjectsOrganism() {
   return (
-    <div className="relative bg-[#0a002b] text-white min-h-screen">
+    <div className="relative bg-blue-900 text-white min-h-screen">
       {/* Particle Background */}
       {/* <Particle /> */}
 
@@ -18,7 +18,7 @@ export default function ProjectsOrganism() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-gray-800 border-2 border-gray-700 rounded-lg shadow-md p-6 text-center">
+          <div className="bg-blue-800 border-2 border-gray-700 rounded-lg shadow-md p-6 text-center">
             <img
               src="https://reactjs.org/logo-og.png"
               alt="React logo"
@@ -74,7 +74,7 @@ export default function ProjectsOrganism() {
               CSS, and JS code preview.dp;s;ilfjdsalhsld;f afh dsa;lfh asdflhasd fah;f asfh;l nasf hjsal;nfahsbf;sahildf/sahfoblsa;fh;bsfhajsbfjlabsfp' ;swfsjpnksjgs; fjaqn joq; jd qqpdj
             </p>
             <div className="flex justify-center gap-4">
-              <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
+              <a href="https://github.com/ashokkkkwr/Food-delivery-app" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
                 GitHub
               </a>
               <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
@@ -85,15 +85,16 @@ export default function ProjectsOrganism() {
             {/* Card 4 */}
             <div className="bg-gray-800 border-2 border-gray-700 rounded-lg shadow-md p-6 text-center">
             <img
-              src="https://reactjs.org/logo-og.png"
+              src={watchProject }
               alt="React logo"
-              className="h-16 mx-auto mb-4"
+              className="h-56  mb-4 object-contain"
             />
             <h3 className="text-2xl font-semibold text-white">Editor.io</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Online code and markdown editor built with React.js. Supports HTML,
-              CSS, and JS code preview.dp;s;ilfjdsalhsld;f afh dsa;lfh asdflhasd fah;f asfh;l nasf hjsal;nfahsbf;sahildf/sahfoblsa;fh;bsfhajsbfjlabsfp' ;swfsjpnksjgs; fjaqn joq; jd qqpdj
-            </p>
+            Complete Full stack project of Smart watch ecommerce website using java servlets and JSP.
+
+
+               </p>
             <div className="flex justify-center gap-4">
               <a href="#" className="bg-pink-500 text-white px-4 py-2 rounded-lg">
                 GitHub
