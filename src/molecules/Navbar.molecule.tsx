@@ -120,8 +120,8 @@ export default function NavbarMolecule() {
                 } transition duration-300`}
                 href="#experience"
                 onClick={() => handleClick("experience")}
-              >
-                Experience
+              >sk
+                Experiencesk
               </a>
             </li> */}
             <li>

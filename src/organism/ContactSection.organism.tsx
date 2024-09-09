@@ -14,7 +14,7 @@ const ContactSection = () => {
         <i className="fas fa-headset"></i> Get in{" "}
         <span className="text-blue-500">Touch</span>
       </h2>
-      <div className="bg-white w-[125vh] h-[50vh] flex justify-center items-center">
+      <div className="bg-white w-[125vh] h-[50vh] flex justify-center items-center rounded-3xl">
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <img
             src={contactImage}
