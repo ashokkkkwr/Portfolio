@@ -26,7 +26,7 @@ export default function HomePages() {
         <SkillOrganism />
         <EducationOrganism />
         <ProjectsOrganism />
-        <Experience />
+        {/* <Experience /> */}
         <ContactSection />
         <Footer />
     </div>

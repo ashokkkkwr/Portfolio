@@ -26,7 +26,7 @@ import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
-    <ul className="flex flex-wrap justify-center bg- w-[82rem] gap-8 bg--100">
+    <ul className="flex flex-wrap justify-center bg- w-[82rem] gap-8 bg--100 border-b-2 border-blue-300 pb-24">
       <li className="px-20 py-5 border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50  bg hover:scale-105 transition duration-300">
         <DiJavascript1 className="text-7xl text-white" />
       </li>
