@@ -69,7 +69,7 @@ const Footer = () => {
 
             <div className="flex justify-center md:justify-start space-x-6">
               <a
-                href="https://www.linkedin.com/in/jigar-sable"
+                href="https://www.linkedin.com/in/ashok-katwal-2b6a402ba/"
                 className="text-blue-400 hover:text-blue-600 transition-colors duration-200"
                 aria-label="LinkedIn"
                 target="_blank"
@@ -78,7 +78,7 @@ const Footer = () => {
                 <FaLinkedin size={24} />
               </a>
               <a
-                href="https://github.com/jigar-sable"
+                href="https://github.com/ashokkkkwr"
                 className="text-gray-400 hover:text-gray-600 transition-colors duration-200"
                 aria-label="GitHub"
                 target="_blank"
@@ -87,7 +87,7 @@ const Footer = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="mailto:jigarsable21@gmail.com"
+                href="mailto:ashokkatwal9811@gmail.com"
                 className="text-red-500 hover:text-red-700 transition-colors duration-200"
                 aria-label="Mail"
                 target="_blank"
@@ -96,7 +96,7 @@ const Footer = () => {
                 <FaEnvelope size={24} />
               </a>
               <a
-                href="https://twitter.com/jigar_sable"
+                href="#"
                 className="text-blue-400 hover:text-blue-600 transition-colors duration-200"
                 aria-label="Twitter"
                 target="_blank"
@@ -105,7 +105,7 @@ const Footer = () => {
                 <FaTwitter size={24} />
               </a>
               <a
-                href="https://t.me/lifecode5"
+                href="#"
                 className="text-blue-400 hover:text-blue-600 transition-colors duration-200"
                 aria-label="Telegram"
                 target="_blank"
