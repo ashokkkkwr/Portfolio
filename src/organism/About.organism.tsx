@@ -4,39 +4,21 @@ import AboutCard from "../molecules/AboutCard.molecules";
 
 export default function AboutOrganism() {
   return (
-    <section
-    id="about"
-    className="p-16"
-  >
+    <section id="about" className="p-4 md:p-16">
       <div className="">
         <Particle />
         <div>
-          <ul style={{ justifyContent: "center", padding: "10px" }}>
-            <li
-              style={{
-                justifyContent: "center",
-                paddingTop: "30px",
-                paddingBottom: "50px",
-              }}
-            >
-              <div className="flex justify-center">
-              <h1 className="mt- text-6xl p- font-serif">
-                Know Who <strong className="purple text-blue-500">I'M</strong>
+          <ul className="flex flex-col items-center md:justify-center md:p-10">
+            <li className="flex flex-col items-center justify-center pt-6 md:pt-8 pb-10">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-center">
+                Know Who{" "}
+                <strong className="purple text-blue-500">I'M</strong>
               </h1>
-              </div>
               <AboutCard />
             </li>
-            {/**
-             * <li
-          
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
           </ul>
         </div>
       </div>
     </section>
   );
-
 }
