@@ -122,7 +122,7 @@ const Footer = () => {
             Designed with{" "}
             <IoMdHeart className="inline text-red-500 animate-pulse" /> by{" "}
             <a
-              href="https://www.linkedin.com/in/jigar-sable"
+              href=""
               className="text-blue-400 hover:underline"
             >
               Ashok Katwal{" "}
