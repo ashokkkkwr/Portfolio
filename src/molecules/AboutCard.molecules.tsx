@@ -7,6 +7,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import { GoDash } from "react-icons/go";
 import AshokBlack from "../assets/ashokB.jpeg";
 import AshokWhite from "../assets/ashokH.jpeg";
+import CV from "../assets/Ashok Katwal CV.pdf"
 
 function AboutCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -59,14 +60,18 @@ function AboutCard() {
             <span>Itahari-20 Tarahara.</span>
           </p>
           <div className="mt-5 flex justify-center md:justify-start">
-            <button className="bg-blue-600 text-white text-lg md:text-xl py-2 px-4 rounded-lg shadow-xl shadow-blue-300 hover:bg-blue-700 transition duration-300">
-              Resume &rarr;
-            </button>
+            <a
+              href={CV}
+              download 
+              className="bg-blue-600 text-white text-lg md:text-lg py-2 px-4 rounded-lg shadow-xl shadow-blue-300 hover:bg-blue-700 transition duration-300"
+            >
+              Download CV
+            </a>
           </div>
         </div>
         <div className="mt-10 text-center md:text-left">
           <p className="text-lg md:text-xl font-poppins">
-            "Don't Complain, Just Enjoy Your Pain!"
+            "Turning ideas into reality with code that makes a difference!"
           </p>
           <footer className="flex justify-center md:justify-start items-center mt-4 text-lg md:text-xl font-bold text-purple-500">
             <GoDash className="mr-2" /> Ashok
