@@ -8,6 +8,7 @@ import Experience from '../organism/Experience.organism'
 import ContactSection from '../organism/ContactSection.organism'
 import Footer from '../organism/Footer.organism'
 import SkillOrganism from '../organism/Skill.organism'
+import Testimonials from '../organism/Testimonials'
 
 
 export default function HomePages() {
@@ -26,6 +27,8 @@ export default function HomePages() {
         <SkillOrganism />
         <EducationOrganism />
         <ProjectsOrganism />
+        <Testimonials />
+        
         {/* <Experience /> */}
         <ContactSection />
         <Footer />

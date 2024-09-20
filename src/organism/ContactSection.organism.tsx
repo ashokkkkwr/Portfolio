@@ -142,7 +142,7 @@ const ContactSection = () => {
           <div className="flex items-end justify-center">
             <button
               type="submit"
-              className={`relative px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors ${loading ? 'cursor-not-allowed opacity-50' : ''}`}
+              className={`relative px-5 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors ${loading ? 'cursor-not-allowed opacity-50' : ''}`}
               disabled={loading} // Disable button when loading
             >
               {loading ? (
@@ -170,11 +170,14 @@ const ContactSection = () => {
                   Sending...
                 </div>
               ) : (
-                <>
-                  <FaTelegramPlane className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-xl" />
+                <p className="flex justify-center items-center">
+                
+                  <FaTelegramPlane className=" mt-4 mr-1 transform -translate-y-1/2 text-white text-xl" />
                   Submit
-                </>
-              )}
+                
+                </p>
+              )
+            }
             </button>
           </div>
         </form>
