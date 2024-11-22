@@ -12,6 +12,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 ## Technologies Used
 
 - **HTML5**: Markup language for the website structure.
+- **React**: For Better code organization,Easier maintenance and scalability.
 - **Tailwind css**: Styling with responsive layouts.
 - **JavaScript**: Interactive functionality.
 
