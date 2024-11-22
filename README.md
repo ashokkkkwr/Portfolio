@@ -17,6 +17,8 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 ## How to View
 
-1. Clone this repository:
+1. Go to 'ashokkatwal.com.npm'
+
+2. Clone this repository:
    ```bash
    git clone https://github.com/ashokkkkwr/Portfolio.git
