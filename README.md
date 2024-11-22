@@ -17,7 +17,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 ## How to View
 
-1. Go to 'ashokkatwal.com.np'
+1. Go to [ashokkatwal.com.np](https://www.ashokkatwal.com.np/)
 
 2. Clone this repository:
    ```bash
