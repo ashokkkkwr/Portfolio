@@ -27,7 +27,7 @@ export default function HomePages() {
         <SkillOrganism />
         <EducationOrganism />
         <ProjectsOrganism />
-        <Testimonials />
+        {/* <Testimonials /> */}
         
         {/* <Experience /> */}
         <ContactSection />
