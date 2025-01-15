@@ -5,6 +5,7 @@ import foodProject from "../assets/2024-04-15_20-45.png";
 import portfolioImage from "../assets/image.png";
 import postFlow from "../assets/image copy.png";
 import { FaGithub } from "react-icons/fa";
+import { MdRocketLaunch } from "react-icons/md";
 
 export default function ProjectsOrganism() {
   return (
@@ -22,8 +23,61 @@ export default function ProjectsOrganism() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Card 1 */}
+            
+            
+
+             {/* Card new */}
+             <div className="border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50 bg hover:scale-105 transition duration-300 p-4 sm:p-6 text-center">
+              <img
+                src="https://www.uctoday.com/wp-content/uploads/2023/08/How-to-Share-Multiple-Screens-in-Teams-Your-Options.jpg"
+                alt="Team monitoring project"
+                className="h-40 sm:h-56 mb-4 object-contain mx-auto"
+              />
+              <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                Team Monitors
+              </h3>
+              <p className="text-white text-xs sm:text-sm mb-4">
+              Team Monitors provides a centralized view to track your team's activities and progress. It enables seamless coordination by offering tools to monitor tasks, deadlines, and communications in real-time.
+              </p>
+              <div className="flex justify-center gap-2 sm:gap-4">
+                
+                <a
+                  href="https://teammonitors.com/"
+                  className="bg-pink-500 text-white px-3 sm:px-4 py-2 rounded-lg flex text-sm"
+                >
+                  <MdRocketLaunch  className="text-lg sm:text-2xl mr-1" />
+                  Going to be hosted on
+                </a>
+              </div>
+            </div>
+
+
             <div className="border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50 bg hover:scale-105 transition duration-300 p-4 sm:p-6 text-center">
+  <img
+    src='https://icumulusweb.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2024/01/09124853/leads1.jpg'
+    alt="Leadz"
+    className="h-40 sm:h-56 mb-4 object-contain mx-auto"
+  />
+  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+    Leadz
+  </h3>
+  <p className="text-white text-xs sm:text-sm mb-4">
+   Lead Extraction & Management tool streamlines the process of gathering and nurturing potential leads. It helps automatically capture leads from various sources, centralize them for easy access, and categorize them based on priority. 
+  </p>
+  <div className="flex justify-center gap-2 sm:gap-4">
+    
+    <a
+      href="ashokkatwal.com.np"
+      className="bg-pink-500 text-white px-3 sm:px-4 py-2 rounded-lg flex text-sm"
+    >
+      <MdRocketLaunch className="text-lg sm:text-2xl mr-1" />
+      Going to be hosted
+    </a>
+  </div>
+</div>
+
+{/* Card 1 */}
+<div className="border-2 border-blue-300 rounded-md shadow-lg shadow-blue-500/50 bg hover:scale-105 transition duration-300 p-4 sm:p-6 text-center">
               <img
                 src={postFlow}
                 alt="NoteFlow project"
