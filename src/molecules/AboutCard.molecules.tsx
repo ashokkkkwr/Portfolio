@@ -30,8 +30,7 @@ function AboutCard() {
             <span className="purple text-purple-500">Ashok Katwal</span> from{" "}
             <span className="purple text-purple-500">Itahari, Nepal.</span>
             <br />
-            I am currently an Intern as a software developer at Information
-            Care.
+            I am currently working as a software developer at Brahmabyte Lab.
             <br />
             Currently in my final year in Bachelor in Information Technology.
             <br />
