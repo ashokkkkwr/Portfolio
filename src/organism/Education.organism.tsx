@@ -54,9 +54,12 @@ export default function EducationOrganism() {
             </p>
             <h4>2020-2022 | Completed</h4>
             <div className="mt-5">
+                          <a href="https://vac.edu.np/">
+
               <button className="bg-blue-600 text-white text-lg md:text-xl py-2 px-4 rounded-lg shadow-xl shadow-blue-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300">
                 Browse &rarr;
               </button>
+                            <a/>
             </div>
           </div>
         </div>
@@ -77,9 +80,13 @@ export default function EducationOrganism() {
             </p>
             <h4>2014-2020 | Completed</h4>
             <div className="mt-5">
+              
+            <a href="https://dpsbpkihsdharan.org/">
+
               <button className="bg-blue-600 text-white text-lg md:text-xl py-2 px-4 rounded-lg shadow-xl shadow-blue-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300">
                 Browse &rarr;
               </button>
+            </a>
             </div>
           </div>
         </div>
